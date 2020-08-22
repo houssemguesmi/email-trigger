@@ -12,7 +12,7 @@ require('dotenv').config({
 
 const app = express() 
 connectDB()
-
+app.use(express.static('../client/build/index.html'))
 
 app.use(bodyparser.json)
 
